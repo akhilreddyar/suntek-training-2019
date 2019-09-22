@@ -1,0 +1,21 @@
+/*fact of num using literative*/
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    long long int j=1;
+    if(n<0)
+    printf("enter a valid num");
+   else if(n==0)
+    j=1;
+    else{
+    while(n){
+       j = j*n;
+       n--;
+    }}
+    
+    printf("%lld",j);
+    return 0;
+}

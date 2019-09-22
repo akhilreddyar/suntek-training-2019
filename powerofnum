@@ -1,0 +1,17 @@
+#include <stdio.h>
+int akhil(int x,int n)
+{
+    if(n<1)
+    return 1;
+    else 
+    return x*akhil(x,n-1);
+}
+
+int main()
+{
+  int x,n,j;
+  scanf("%d",&x);
+  scanf("%d",&n);
+ printf("%d",akhil(x,n));
+ return 0;
+}

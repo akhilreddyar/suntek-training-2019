@@ -1,0 +1,23 @@
+/only valid for inputs 0 to 25max/
+long long int fact(int n){
+     if(n==0)
+     return 1;
+     else 
+     return n*fact(n-1);
+ }
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    
+ long long int k;
+    scanf("%d",&n);
+    if(n>=0){
+    k=fact(n);
+    printf("%lld",k);}
+    else
+    printf("enter a vlaid number");
+    
+    return 0;
+}
